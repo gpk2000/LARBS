@@ -5,6 +5,7 @@
 ,ttf-ubuntu-font-family,"provides the sans and serif fonts for LARBS."
 ,ttf-jetbrains-mono,"provides the monospace fonts for LARBS."
 ,pcmanfm,"file manager."
+,xf86-video-intel,"is used to remove screen tearing for intel cards."
 ,bc,"is used for a dropdown calculator."
 ,xcompmgr,"is for transparency and removing screen-tearing."
 ,xorg-xprop,"is a tool for detecting window properties."
