@@ -236,6 +236,14 @@ echo "export \$(dbus-launch)" > /etc/profile.d/dbus.sh
 	Option "Tapping" "on"
 EndSection' > /etc/X11/xorg.conf.d/40-libinput.conf
 
+# screen tearing for intel iGPUs
+[ ! -f /etc/X11/xorg.conf.d/20-intel.conf ] && printf 'Section "Device"
+        Identifier "Intel Graphics"
+        Driver "intel"
+        Option "TearFree" "true"
+EndSection' > /etc/X11/xorg.conf.d/20-intel.conf
+
+
 # Fix fluidsynth/pulseaudio issue.
 grep -q "OTHER_OPTS='-a pulseaudio -m alsa_seq -r 48000'" /etc/conf.d/fluidsynth ||
 	echo "OTHER_OPTS='-a pulseaudio -m alsa_seq -r 48000'" >> /etc/conf.d/fluidsynth
