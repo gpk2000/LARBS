@@ -19,6 +19,7 @@
 ,ffmpeg,"can record and splice video and audio on the command line."
 ,gnome-keyring,"serves as the system keyring."
 A,gtk-theme-minwaita,"gives the dark GTK theme used in LARBS."
+A,downgrade,"is useful for downgrading packages."
 ,nano,"default CLI editor."
 ,mpd,"is a lightweight music daemon."
 ,mpc,"is a terminal interface for mpd."
